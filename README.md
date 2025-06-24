@@ -49,12 +49,14 @@ pip install torch torchvision nibabel scikit-image matplotlib pandas
 
 2. Organize files in the following structure:
 
+```
 hippocampus/
 ├── nifti/
 │   ├── *.nii
 │   └── labels/
 │       └── *.nii
 └── data_splits/
+```
 
 3. Run the data splitting script or manually create CSV files listing image and mask paths for training, validation, and testing.
 
@@ -81,6 +83,7 @@ python train.py
 
 ## Project structure
 
+```
 HippocampusSegmentation/
 ├── data_splits/          # CSV files for train/val/test splits
 ├── nifti/                # Raw MRI images (.nii files)
@@ -90,6 +93,7 @@ HippocampusSegmentation/
 ├── train.py              # Training script
 ├── requirements.txt      # Python dependencies
 └── README.md             # This file
+```
 
 ## Results
 
